@@ -30,39 +30,39 @@ public class Lesson2_hw {
 
         System.out.println("Задание №6:");
         int[] a = {1, 1, 1, 2, 1};
-            for (int i = 0; i < a.length; i++) {
-        System.out.print(a[i] + " ");
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
         }
         System.out.println(checkBalance(new int[]{1, 1, 1, 2, 1})); // true
         int[] a2 = {2, 1, 1, 2, 1};
-            for (int i = 0; i < a2.length; i++) {
-        System.out.print(a2[i] + " ");
+        for (int i = 0; i < a2.length; i++) {
+            System.out.print(a2[i] + " ");
         }
         System.out.println(checkBalance(new int[]{2, 1, 1, 2, 1})); // false
         System.out.println ();
 
         System.out.println("Задание №7:");
         doShiftArr(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}, -3);
-            System.out.println();
+        System.out.println();
     }
 
 
     // Задание 1 : 1. Задать целочисленный массив, состоящий из элементов 0 и 1.
     // Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ]. С помощью цикла и условия заменить 0 на 1, 1 на 0;
     static public void changeArr() {
-            System.out.println("Заданный массив:");
+        System.out.println("Заданный массив:");
         int[] myArr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         for (int i = 0; i < myArr.length; i++) {
             System.out.print(myArr[i] + " ");
         }
-            System.out.println();
-            System.out.println("Массив с заменой 0<=>1:");
+        System.out.println();
+        System.out.println("Массив с заменой 0<=>1:");
         for (int i = 0; i < myArr.length; i++) {
             if (myArr[i] == 0) myArr[i] = 1;
             else myArr[i] = 0;
             System.out.print(myArr[i] + " ");
         }
-            System.out.println();
+        System.out.println();
     }
 
     // Задание 2: Задать пустой целочисленный массив размером 8.
@@ -80,7 +80,7 @@ public class Lesson2_hw {
             x = x + 3;
         }
 
-            System.out.println();
+        System.out.println();
     }
 
     //3 задание: Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом, и числа меньшие 6 умножить на 2;
@@ -91,7 +91,7 @@ public class Lesson2_hw {
             System.out.print(myArr3[i] + " ");
         }
 
-            System.out.println();
+        System.out.println();
 
         for (i = 0; i < myArr3.length; i++) {
             if (myArr3[i] < 6) {
@@ -99,9 +99,9 @@ public class Lesson2_hw {
             }
             System.out.print(myArr3[i] + " ");
         }
-            System.out.println();
-            System.out.println();
-        }
+        System.out.println();
+        System.out.println();
+    }
 
     //Задание 4: Создать квадратный двумерный целочисленный массив
     // (количество строк и столбцов одинаковое), и с помощью цикла(-ов) заполнить его диагональные элементы единицами;
@@ -117,10 +117,10 @@ public class Lesson2_hw {
                 System.out.print(" " + matrix[i][j] + " ");
 
             }
-                System.out.println();
+            System.out.println();
         }
-                System.out.println();
-                System.out.println();
+        System.out.println();
+        System.out.println();
 
     }
 
@@ -144,13 +144,13 @@ public class Lesson2_hw {
             //Не знаю что подразумевалось под "без помощи интернета", наверное не пользоваться тем ,чего не объясняли.
             System.out.print(myArr5[i] + " ");
         }
-            System.out.println();
-            System.out.println("min = " + min + "   max = " + max);
+        System.out.println();
+        System.out.println("min = " + min + "   max = " + max);
     }
-        //Задание 6: ** Написать метод, в который передается не пустой одномерный целочисленный массив, метод должен вернуть true,
-        // если в массиве есть место, в котором сумма левой и правой части массива равны.
-        // Примеры: checkBalance([2, 2, 2, 1, 2, 2, || 10, 1]) → true, checkBalance([1, 1, 1, || 2, 1]) → true,
-        // граница показана символами ||, эти символы в массив не входят.
+    //Задание 6: ** Написать метод, в который передается не пустой одномерный целочисленный массив, метод должен вернуть true,
+    // если в массиве есть место, в котором сумма левой и правой части массива равны.
+    // Примеры: checkBalance([2, 2, 2, 1, 2, 2, || 10, 1]) → true, checkBalance([1, 1, 1, || 2, 1]) → true,
+    // граница показана символами ||, эти символы в массив не входят.
     static public boolean checkBalance(int[] myArr6) {
         int leftSum = 0, rightSum = 0;
         int left = 0, right = 0;
